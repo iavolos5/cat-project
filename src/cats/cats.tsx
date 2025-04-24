@@ -1,8 +1,8 @@
-import CatsButton from './catsGetButton/catsGetButton'
-import CatsOptions from './catsOptions/catsOptions'
+import CatsButton from '@/cats/catsGetButton/catsGetButton'
+import CatsOptions from '@/cats/catsOptions/catsOptions'
 import { useEffect, useState } from 'react'
-import styles from './cats.module.scss'
-import { fetchCats } from '../api/cats/apiCats'
+import styles from '@/cats/cats.module.scss'
+import { fetchCats } from '@/api/cats/apiCats'
 
 const Cats = () => {
   const [isEnabled, setEnabled] = useState(false)

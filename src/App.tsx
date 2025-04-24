@@ -1,6 +1,7 @@
-import './App.css'
-import './index.css'
-import Cats from './cats/cats'
+import '@/App.css'
+import '@/index.css'
+import Cats from '@/cats/cats'
+
 
 function App() {
   return (

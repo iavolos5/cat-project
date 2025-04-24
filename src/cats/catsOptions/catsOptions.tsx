@@ -1,4 +1,4 @@
-import { CatOptions } from '../interface/cats-options'
+import { CatOptions } from '@/cats/interface/cats-options'
 import styles from '../cats.module.scss'
 
 const CatsOptions = ({

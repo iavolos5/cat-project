@@ -1,5 +1,5 @@
-import { type CatsButton } from '../interface/cats-button'
-import styles from '../cats.module.scss'
+import { type CatsButton } from '@/cats/interface/cats-button'
+import styles from '@/cats/cats.module.scss'
 
 const CatsButton = ({ fetchCatsData, isEnabled }: CatsButton) => {
   return (
