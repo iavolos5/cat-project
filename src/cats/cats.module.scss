@@ -1,0 +1,21 @@
+.cats {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
+
+  .catsButton {
+    margin-top: 15px;
+    width: 250px;
+    height: 30px;
+  }
+
+  .catsOptions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    margin-top: 15px;
+  }
+}
