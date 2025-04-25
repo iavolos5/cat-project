@@ -1,4 +1,4 @@
-import { Cats } from '../../cats/interface/cats'
+import { Cats } from '@/cats/interface/cats'
 
 export const fetchCats = async () => {
   const url = `https://api.thecatapi.com/v1/images/search?limit=1`
