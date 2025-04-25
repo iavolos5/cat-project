@@ -4,7 +4,7 @@ import styles from '../cats.module.scss'
 const CatsOptions = ({
   isEnabled: enable,
   onSetEnabled,
-  autoRefresh,
+  isAutoRefreshed: autoRefresh,
   onSetAutoRefresh
 }: CatOptions) => {
   return (

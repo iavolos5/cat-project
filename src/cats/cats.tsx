@@ -36,7 +36,7 @@ const Cats = () => {
     <div className={styles.cats}>
       <CatsOptions
         isEnabled={isEnabled}
-        autoRefresh={autoRefresh}
+        isAutoRefreshed={autoRefresh}
         onSetEnabled={handleEnable}
         onSetAutoRefresh={handleAutoRefresh}
       ></CatsOptions>
