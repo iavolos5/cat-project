@@ -23,7 +23,9 @@ const Cats = () => {
   }
 
   useEffect(() => {
-    if (!autoRefresh) return
+    if (!autoRefresh) {
+      return
+    }
     const interval = setInterval(() => {
       fetchCatsData()
     }, 5000)
