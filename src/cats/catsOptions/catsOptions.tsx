@@ -2,7 +2,7 @@ import { CatOptions } from '@/cats/interface/cats-options'
 import styles from '../cats.module.scss'
 
 const CatsOptions = ({
-  enable,
+  isEnabled: enable,
   onSetEnabled,
   autoRefresh,
   onSetAutoRefresh
