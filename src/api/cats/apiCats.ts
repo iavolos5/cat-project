@@ -12,8 +12,6 @@ export const fetchCatsUrl = async () => {
 
     const data: Cats[] = await response.json()
 
-    console.log(data)
-
     return data[0].url
   } catch (error) {
     console.log(error)
