@@ -1,6 +1,6 @@
 import { Cats } from '@/cats/interface/cats'
 
-export const fetchCats = async () => {
+export const fetchCatsUrl = async () => {
   const url = `https://api.thecatapi.com/v1/images/search?limit=1`
   const api_key = 'DEMO_API_KEY'
   try {
