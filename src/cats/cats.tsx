@@ -6,7 +6,7 @@ import { fetchCats } from '@/api/cats/apiCats'
 
 const Cats = () => {
   const [isEnabled, setEnabled] = useState(false)
-  const [autoRefresh, setAutoRefresh] = useState(false)
+  const [isAutoRefreshed, setAutoRefreshed] = useState(false)
   const [src, setSrc] = useState('')
 
   const handleEnable = () => {
@@ -14,7 +14,7 @@ const Cats = () => {
   }
 
   const handleAutoRefresh = () => {
-    setAutoRefresh((autoRefresh) => !autoRefresh)
+    setAutoRefreshed((autoRefresh) => !autoRefresh)
   }
 
   const fetchCatsData = async () => {
@@ -23,14 +23,14 @@ const Cats = () => {
   }
 
   useEffect(() => {
-    if (!autoRefresh) {
+    if (!isAutoRefreshed) {
       return
     }
     const interval = setInterval(() => {
       fetchCatsData()
     }, 5000)
     return () => clearInterval(interval)
-  }, [autoRefresh])
+  }, [isAutoRefreshed])
 
   console.log(src)
 
@@ -38,7 +38,7 @@ const Cats = () => {
     <div className={styles.cats}>
       <CatsOptions
         isEnabled={isEnabled}
-        isAutoRefreshed={autoRefresh}
+        isAutoRefreshed={isAutoRefreshed}
         onSetEnabled={handleEnable}
         onSetAutoRefresh={handleAutoRefresh}
       ></CatsOptions>
